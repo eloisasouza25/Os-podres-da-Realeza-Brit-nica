@@ -1,1 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&família =Madimi+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900; 1.100..900&display=swap');
 
+:root{
+    --preto:rgba(0, 0, 0, 1);
+    --branco:rgba(255, 254, 254, 1);
+    --roxo:rgba(94, 6, 96, 1);
+    --roxo-claro:rgba(152, 85, 153, 1);
+    --rosa:rgba(255, 11, 201, 1);
+    --rosa-claro:rgba(227, 98, 199, 1);
+    --azul:rgba(16, 12, 254, 1);
+    --azul-escuro:rgba(4, 2, 83, 1);
+    --azul-claro:rgba(14, 252, 252, 1);
+    --azul-bebe:rgba(33, 191, 191, 1);
+    --cinza:rgba(121, 115, 115, 1);
+    --bordo:rgba(99, 4, 4, 1);
+    --verde-limao:rgba(93, 249, 20, 1);
+
+}
+body{
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family:"Roboto Condensed", sans-serif; ;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span{
+    color:var(--rosa-claro)
+}
+
+.botao{
+    font-family:"Roboto Condensed", sans-serif;; ;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--azul-bebe);
+    border-left: 2px solid var(--azul-bebe);
+    border-right: 2px solid var(--azul-bebe);
+    border-top: none;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0 ;
+}
+
+.botoes{
+    display: block;
+}
+
+.ativo{
+    background-color: var(--azul-bebe);
+    border-bottom: 4px solid var(--roxo);
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
